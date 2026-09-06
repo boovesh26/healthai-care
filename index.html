@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HealthAI Care is a professional AI Health & Family Welfare Assistant for simple, accessible and responsible everyday health guidance.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0f2f46">
+  <meta property="og:title" content="HealthAI Care | AI Health & Family Welfare Assistant">
+  <meta property="og:description" content="Simple, accessible and responsible health guidance for everyday wellness.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HealthAI Care">
+  <meta name="twitter:card" content="summary">
+  <title>HealthAI Care | AI Health & Family Welfare Assistant</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "HealthAI Care",
+    "description": "AI Health & Family Welfare Assistant for simple, accessible and responsible health guidance."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="HealthAI home">
+      <span class="brand-icon">✚</span><span>Health<span class="brand-accent">AI</span></span>
+    </a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#assistant">AI Assistant</a>
+      <a href="#services">Services</a>
+      <a href="#awareness">Awareness</a>
+    </nav>
+    <a class="nav-button" href="#assistant">Ask AI <span>→</span></a>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> Responsible AI for everyday health</div>
+        <h1>Your health,<br><span>simplified.</span></h1>
+        <p class="hero-text">Get simple health information, practical wellness tips and safety guidance — all in one friendly assistant.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#assistant">Talk to HealthAI <span>→</span></a>
+          <a class="secondary-btn" href="#services">Explore services</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Easy to understand</span><span>✓ Safety focused</span><span>✓ Student friendly</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="doctor-card">
+          <div class="doctor-top"><div class="avatar">🩺</div><div><strong>HealthAI Assistant</strong><small>Online • Ready to help</small></div><span class="online"></span></div>
+          <div class="mini-message">Hello! 👋<br>How can I help you today?</div>
+          <div class="mini-options"><span>🥗 Nutrition</span><span>😴 Sleep</span><span>🧘 Stress</span></div>
+          <div class="safe-pill">🛡️ Responsible guidance</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>24/7</strong><span>Available locally</span></div>
+      <div><strong>4</strong><span>Wellness topics</span></div>
+      <div><strong>1</strong><span>Simple assistant</span></div>
+      <div><strong>100%</strong><span>Safety focused</span></div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading"><div><span class="section-label">WHAT WE OFFER</span><h2>Care made <span>simple.</span></h2></div><p>Tools designed to help people understand everyday health and make safer decisions.</p></div>
+      <div class="service-grid">
+        <article class="service-card featured"><div class="service-icon">🤖</div><span class="card-tag">SMART ASSISTANT</span><h3>AI Health Assistant</h3><p>Ask general health and wellness questions in simple language and receive practical, safety-focused guidance.</p><a href="#assistant">Start a conversation →</a></article>
+        <article class="service-card emergency-card"><div class="service-icon">🚨</div><span class="card-tag">SAFETY FIRST</span><h3>Emergency Safety</h3><p>Recognize serious warning signs and get a clear reminder to seek urgent professional help.</p><a href="#emergency">Check safety →</a></article>
+        <article class="service-card"><div class="service-icon">💡</div><span class="card-tag">WELLNESS</span><h3>Health Awareness</h3><p>Quick, easy-to-read tips covering diet, exercise, sleep and hygiene.</p><a href="#awareness">Explore tips →</a></article>
+      </div>
+    </section>
+
+    <section id="assistant" class="assistant-section">
+      <div class="assistant-info">
+        <span class="section-label">YOUR HEALTH COMPANION</span>
+        <h2>Ask. Understand.<br><span>Take the next safe step.</span></h2>
+        <p>HealthAI is built for general health information — not diagnosis. Ask questions about healthy habits, sleep, stress, nutrition, exercise and more.</p>
+        <div class="assistant-points"><div>✓ Simple language</div><div>✓ Safety-first responses</div><div>✓ No medicine prescriptions</div></div>
+      </div>
+      <div class="chat-panel">
+        <div class="chat-head"><div class="chat-avatar">✚</div><div><strong>HealthAI</strong><small>General health assistant</small></div><span class="status-dot"></span></div>
+        <div id="chat" class="chat"><div class="bubble bot">Hi! 👋 I'm HealthAI. Ask me a general health question and I'll give simple, responsible guidance.</div></div>
+        <div class="suggestions"><button onclick="useQuestion('What are healthy habits for a college student?')">Healthy habits</button><button onclick="useQuestion('How can I manage stress during exams?')">Exam stress</button><button onclick="useQuestion('What are good sleep habits?')">Better sleep</button></div>
+        <div class="input-row"><input id="question" aria-label="Health question" placeholder="Type your health question..."><button onclick="askAI()">Ask AI <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section id="emergency" class="emergency-banner">
+      <div class="emergency-symbol">🚨</div>
+      <div><span class="section-label">EMERGENCY SAFETY</span><h2>Serious symptoms? Get professional help.</h2><p>Severe chest pain, difficulty breathing, unconsciousness, heavy bleeding or another serious emergency should be treated as urgent.</p></div>
+      <button class="danger-btn" onclick="emergency()">Check emergency guidance</button>
+      <div id="emergencyResult" class="emergency-result"></div>
+    </section>
+
+    <section id="awareness" class="section awareness-section">
+      <div class="section-heading"><div><span class="section-label">HEALTH AWARENESS</span><h2>Small habits. <span>Big difference.</span></h2></div><p>Choose a topic for a quick, practical wellness tip.</p></div>
+      <div class="topic-grid">
+        <button class="topic-card" onclick="tip('diet')"><span>🥗</span><strong>Nutrition</strong><small>Balanced food & hydration</small><b>→</b></button>
+        <button class="topic-card" onclick="tip('exercise')"><span>🏃</span><strong>Exercise</strong><small>Movement for daily wellness</small><b>→</b></button>
+        <button class="topic-card" onclick="tip('sleep')"><span>😴</span><strong>Sleep</strong><small>Rest & healthy routines</small><b>→</b></button>
+        <button class="topic-card" onclick="tip('hygiene')"><span>🧼</span><strong>Hygiene</strong><small>Simple prevention habits</small><b>→</b></button>
+      </div>
+      <div id="tipResult" class="tip-result"><span>💡</span><span>Choose a topic above to see a quick health tip.</span></div>
+    </section>
+
+    <section class="responsible">
+      <div class="shield">🛡️</div><div><strong>Responsible AI</strong><p>This prototype provides general health information only. It does not diagnose conditions, prescribe medicines or replace a qualified healthcare professional. For emergencies, contact local emergency services or seek urgent medical care.</p></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">✚ Health<span>AI Care</span></div><p>AI Health & Family Welfare Assistant • Responsible health information</p><span>Built for accessible and responsible health guidance.</span></footer>
+
+<script src="app.js" defer></script>
+
+</body>
+</html>
